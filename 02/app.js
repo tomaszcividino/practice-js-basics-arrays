@@ -1,7 +1,27 @@
 const randomArray = createRandomArray();
-console.log(randomArray);
+console.log(randomArray)
 
 
+const showArray = iteration(randomArray)
+                            
+function iteration(ran) {   
+  for(let i=0; i < ran.length; i++) {
+  return ran[0]
+  }
+}
+
+console.log('Show array is', showArray)
+
+const lastNumber = lastIndex(randomArray)
+
+
+function lastIndex(arr) {
+  const lastArray = arr.length - 1
+  return randomArray[lastArray]
+   };
+
+
+console.log('Last Number is', lastNumber)
 
 // nie modyfikuj kodu poniżej!
 
@@ -21,3 +41,5 @@ function createRandomArray() {
 function getRandomInteger(min, max) {
     return Math.round(Math.random() * (max-min) + min);
 }
+
+
